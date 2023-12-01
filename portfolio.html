@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Rishabh Rai's Portfolio
+        </title>
+        <!-- <script src="security.js"></script> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="pstyle.css">
+    </head>
+    <body align="center">
+        <header class="header">
+            <a href="#" class="logo"> My Portfolio</a>
+            <span style="font-size:30px;cursor:pointer;color:rgb(233, 232, 232);padding: 10px;border-radius: 49%;" onclick="openNav()">&#9776;</span>
+            <nav class="overlay" id="nav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="#home" class="active">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </nav>
+        </header>
+        <script>
+            function openNav() {
+              document.getElementById("nav").style.height = "100%";
+            }
+            
+            function closeNav() {
+              document.getElementById("nav").style.height = "0%";
+            }
+        </script>
+
+
+        <section class="home" id="home">
+            <div class="myimg">
+                <img src="image.jpeg" alt="My Image">
+            </div>
+            <div class="h-cont">
+                <h3><span>Hello,</span> I'm </h3>
+                <h1>Rishabh Rai</h1>
+                <h3>And I am a <span id="job">First Year Student at MIT Aoe</span></h3>
+                <p>
+                    And I'm an <span>enthusiast </span> about computer-related  <span>softwares and technologies.</span>
+                </p>
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/rishabh-rai-543885258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="linkedin.png" alt="Linkedin"></a>
+                    <a href="https://github.com/Rish281"><img src="github.png" alt="Github"></i></a>
+                    <a href="https://www.codechef.com/users/rairishabh281"><img src="codechef.png" alt="Codechef"></a>
+                </div>
+                <!--Download CV-->
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="ab-cont">
+                <center>
+                <h2 style="text-align: center;" class="heading">About <span id="ab-me">Me</span></h2>
+                <br>
+                <br>
+                <div class="ab-img" id="ab-img">
+                    <img src="image.jpeg" style="height:40%;width:40%" alt="My Image">
+                </div>
+                </center>
+                <br>
+                <h3>Computer Engineer Student</h3>
+                <p>Hey, I am now in First Year at MIT Acaedemy of Engineering. I aspire to become an Android App Developer. I am still learning Kotlin as well as C and Python. Also very much comfortible with the Android Studio.</p>
+                <a href="index.html"  class="btn">Know more</a>
+            </div>
+        </section>
+
+        <section class="skills" id="skills">
+            <h2 class="heading">My <span>Skills</span></h2>
+
+            <div class="sk-cont">
+                <div class="sk-box">
+                    <img src="python.png" style="height:30%;width:30%" alt="Python Image" class="sk-img">
+                    <br><br><h3>Python</h3>
+                    <p> good at Python programming lang <br></p>
+                </div>
+
+                <div class="sk-box">
+                    <img src="linux.png" style="height:30%;width:30%" alt="Linux Image" class="sk-img">
+                    <h3>Linux Skills</h3>
+                    <p>I am also quite comfortable with Linux Terminal.</p>
+                </div>
+
+                <div class="sk-box">
+                    <img src="web.png" style="height:30%;width:30%" alt="Web Image" class="sk-img">
+                    <h3>Web Development</h3>
+                    <p>Having basic knowledge of HTML, CSS and JavaScript.</p>
+                </div>
+
+                <div class="sk-box">
+                    <img src="android.png" style="height:30%;width:30%" alt="Android Image" class="sk-img">
+                    <h3>Android App Development</h3>
+                    <p>Very much comfortable with Andriod Studio and aspiring for having future in Android Development and many more.</p>
+                </div>
+            </div>
+        </section>
+
+        </section>
+
+        <section class="contact" id="contact">
+            <h2 class="heading">Contact <span>Me</span></h2>
+      
+            <form name="f1" class="form" method="post">
+              <div class="input-box">
+                <input type="text" name="name" class="name" placeholder="Full Name" required>
+                <input type="email" name="email" class="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" placeholder="Email Address" required>
+              </div>
+              <div class="input-box">
+                <input type="tel" placeholder="Phone Number" pattern="[0-9]{10}" class="phone"  name="phone" required>
+                <input type="text" placeholder="Contact Subject" name="subject" class="subject" required>
+              </div>
+              <textarea name="message" class="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+              <input type="submit" value="Send Message" name="submit" class="btn">
+            </form>
+            <script src="data.js"></script>
+          </section>
+
+          <footer class="footer">
+            <div class="footer-txt">
+                <p>Copyright © | All Rights Reserved.</p>
+              </div>
+        
+            <div class="uparr" id="uparr">
+                <a href="#home"><img src="uarrow.png" class="icon" alt="home"></a>
+            </div>       
+          </footer>
+    </body>
+</html>
