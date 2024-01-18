@@ -175,13 +175,14 @@ span{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 3rem;
-    height: 3rem;
-    background: transparent;
+    width: 3.5rem;
+    height: 3.5rem;
+    border: 7rem;
+    background:rgb(181, 178, 178);
     /* border: 0.2rem solid aqua; */
-    border-radius: 60%;
+    border-radius: 50%;
     /* font-size: 2.25rem; */
-    color: rgb(120, 121, 121);
+    color: rgb(255, 255, 255);
     margin: 2rem 1rem 2rem 0;
 }
 
